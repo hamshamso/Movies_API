@@ -2,7 +2,7 @@ import {createContext, useState, useContext, useEffect} from "react"
 
 const MovieContext = createContext()
 
-export const useMovieContext = () => useContext(MovieContext) //to avoid repition 
+export const useMovieContext = () => useContext(MovieContext) // Avoid repitions
 
 export const MovieProvider = ({children}) => {
     const [favorites, setFavorites] = useState([])
